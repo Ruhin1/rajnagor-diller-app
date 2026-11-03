@@ -56,21 +56,9 @@
                 <img src="{{ asset('logo/gf-food.jpg') }}" alt="Company Logo">
             </div>
             <div class="company-info">
-                <h1>GF Food & Beverage Ltd.</h1>
-                <p>
-                    @if ($domin == 'https://app.gffoodandbeverage.com')
-                        Bhanugach Bazar, Kamalganj.
-                    @else
-                        Chadnighat, Moulvibazar.
-                    @endif
-                </p>
-                <p>
-                    @if ($domin == 'https://app.gffoodandbeverage.com')
-                        Phone: 01344-558778
-                    @else
-                        Phone: 01756697683
-                    @endif
-                </p>
+                <h1>বদরুল এন্টারপ্রাইজ </h1>
+                <p>ইউপি রোড রাজনগর</p>
+                <p>Phone: +880 1709090957</p>
             </div>
         </header>
 
