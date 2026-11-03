@@ -75,20 +75,16 @@ class BluetoothStatementPrinterService
         $type = $data['type'] ?? 'customer';
         
         // Domain check
-        $domain = url('/');
-        $compAddress = "এমপির বাড়ির গেইট, 2য় তলা, চাঁদনীঘাট, মৌলভীবাজার।";
-        $compPhone = "Phone: 01756697683";
+        $compAddress = "ইউপি রোড রাজনগর";
+        $compPhone = "Phone: +880 1709090957";
         
-        if ($domain == 'https://app.gffoodandbeverage.com') {
-            $compAddress = "ভানুগাছ বাজার, কমলগঞ্জ, মৌলভীবাজার";
-            $compPhone = "Phone: 01344-558778";
-        }
+        
         
         // --- ১. হেডার ---
         $output .= $esc . "a" . chr(0);  // Left align
         $output .= $this->setTextSize(1, 1);
         
-        $output .= $this->renderTextAsImage("GF Food and beverage LTD", 12);
+        $output .= $this->renderTextAsImage("বদরুল এন্টারপ্রাইজ ", 12);
         $output .= $this->renderTextAsImage($compAddress, 9);
         $output .= $compPhone . "\n";
         $output .= str_repeat("-", 32) . "\n";

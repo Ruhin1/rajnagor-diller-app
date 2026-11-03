@@ -72,21 +72,18 @@ class BluetoothPrinterService
         $output .= $esc . "@";
         
         // Domain check (আপনার existing logic)
-        $domain = url('/');
-        $compAddress = "Chadnighat, Moulvibazar.";
-        $compPhone = "Phone: 01756697683";
+
+        $compAddress = "ইউপি রোড রাজনগর";
+        $compPhone = "Phone: +880 1709090957";
         
-        if ($domain == 'https://app.gffoodandbeverage.com') {
-            $compAddress = "Bhanugach Bazar, Kamalganj.";
-            $compPhone = "Phone: 01344-558778";
-        }
+        
         
         // --- ১. হেডার ---
         $output .= $esc . "a" . chr(0);  // Left align
         $output .= $this->setTextSize(1, 1);
         
         // কোম্পানির নাম (বাংলা - image হিসেবে)
-        $output .= $this->renderTextAsImage("GF Food & Beverage Ltd.", 14);
+        $output .= $this->renderTextAsImage("বদরুল এন্টারপ্রাইজ ", 14);
         $output .= $this->renderTextAsImage($compAddress, 10);
         $output .= $compPhone . "\n";
         $output .= str_repeat("-", 32) . "\n";

@@ -53,7 +53,7 @@
     <div class="invoice-wrapper">
         <header class="invoice-header">
             <div class="logo">
-                <img src="{{ asset('logo/gf-food.jpg') }}" alt="Company Logo">
+                <img src="{{ asset('logo/gf-food2.jpg') }}" alt="Company Logo">
             </div>
             <div class="company-info">
                 <h1>বদরুল এন্টারপ্রাইজ </h1>

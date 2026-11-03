@@ -51,14 +51,10 @@ class BanglaPrinterService
         }
 
         try {
-            $domain = url('/');
-            $compAddress = "Chadnighat, Moulvibazar.";
-            $compPhone = "Phone: 01756697683";
+            $compAddress = "ইউপি রোড রাজনগর";
+            $compPhone = "Phone: +880 1709090957";
             
-            if ($domain == 'https://app.gffoodandbeverage.com') {
-                $compAddress = "Bhanugach Bazar, Kamalganj.";
-                $compPhone = "Phone: 01344-558778";
-            }
+            
 
             Log::info("Connecting to Printer...");
             $connector = new NetworkPrintConnector($this->printerIp, $this->printerPort, 5);
@@ -67,7 +63,7 @@ class BanglaPrinterService
             
             // --- ১. হেডার সেকশন ---
             $printer->setJustification(Printer::JUSTIFY_LEFT);
-            $this->printBanglaAsRaster($printer, "GF Food & Beverage Ltd.", 10);
+            $this->printBanglaAsRaster($printer, "বদরুল এন্টারপ্রাইজ ", 10);
             $this->printBanglaAsRaster($printer, $compAddress, 8);
             $this->printBanglaAsRaster($printer, $compPhone, 8);
             $printer->text("----------------------------------------------\n");
