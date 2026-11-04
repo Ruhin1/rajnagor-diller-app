@@ -174,7 +174,7 @@
     <div class="cards-container">
        @foreach ($cards as $card)
             <div class="card">
-                <p class="cname"><span>বদরুল এন্টারপ্রাইজ /</span>  01709090957</p>
+                <p class="cname"><span>বদরুল  /</span>  01709090957</p>
 
                 <div class="barcode"> 
                     {!! DNS1D::getBarcodeHTML($card->code, 'C128', 1, 20) !!}    
