@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cards Print</title>
-    {{-- <style>
+    <style>
         @page {
             size: A4;
             margin: 0;
@@ -86,9 +86,9 @@
             white-space: nowrap;
             margin-top: 2px;
         }
-    </style> --}}
+    </style>
 
-    <style>
+    {{-- <style>
     @page {
         size: A4;
         margin: 0;
@@ -168,7 +168,7 @@
         white-space: nowrap;
         margin-top: 2px;
     }
-</style>
+</style> --}}
 </head>
 <body>
     <div class="cards-container">
