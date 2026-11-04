@@ -44,10 +44,10 @@
                         <option value="কালাভুনা মশলা">কালাভুনা মশলা</option>
                         <option value="আলু-বোখড়া">আলু-বোখড়া</option>
                         <option value="বিরিয়ানী মশলা">বিরিয়ানী মশলা</option>
-                        <option value="রোস্ট সস্">রোস্ট সস্</option>
+                        {{-- <option value="রোস্ট সস্">রোস্ট সস্</option>
                         <option value="বিরানী সস">বিরানী সস</option>
                         <option value="মিট সস">মিট সস</option>
-                        <option value="ভেজিটেবল সস">ভেজিটেবল সস</option>
+                        <option value="ভেজিটেবল সস">ভেজিটেবল সস</option> --}}
                         <option value="তন্ময় ঘি">তন্ময় ঘি</option>
                         <option value="মালাই ক্রিম">মালাই ক্রিম</option>
                         <option value="মিট ক্রিম"> মিট ক্রিম</option>

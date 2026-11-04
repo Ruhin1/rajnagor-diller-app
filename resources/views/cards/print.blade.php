@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cards Print</title>
-    <style>
+    {{-- <style>
         @page {
             size: A4;
             margin: 0;
@@ -86,17 +86,96 @@
             white-space: nowrap;
             margin-top: 2px;
         }
-    </style>
+    </style> --}}
+
+    <style>
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .card {
+            box-shadow: none;
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .card {
+        width: 145px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* 🎨 নতুন থিম */
+        background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+        border: 2px solid #3730a3;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-inside: avoid;
+        padding: 2px;
+    }
+
+    .card p {
+        margin: 1px 0;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    /* 🎨 টেক্সট কালার ইন্ডিগো */
+    .card .cname,
+    .card .pname {
+        color: #312e81;
+    }
+
+    /* 🎨 বারকোড হাইলাইট (সাদা বক্স, বারকোড স্পষ্ট দেখাবে) */
+    .card .barcode {
+        margin: 4px 0;
+        background: #ffffff;
+        padding: 2px 4px;
+        border-radius: 3px;
+        border: 1px solid #c7d2fe;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card .barcode-text {
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: center;
+        color: #312e81 !important;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-top: 2px;
+    }
+</style>
 </head>
 <body>
     <div class="cards-container">
        @foreach ($cards as $card)
             <div class="card">
-                @if (url('/') == 'app.gffoodandbeverage.com')
-                <p class="cname"><span>Golden Food /</span> 01756697683</p>
-                @else
-                <p class="cname"><span>গোল্ডেন ওয়ান /</span>  01756697683</p>
-                @endif
+                <p class="cname"><span>বদরুল এন্টারপ্রাইজ /</span>  01709090957</p>
+
                 <div class="barcode"> 
                     {!! DNS1D::getBarcodeHTML($card->code, 'C128', 1, 20) !!}    
                    

@@ -86,26 +86,18 @@
     <div class="statement-wrapper">
         <header class="header">
             <div class="logo">
-                <img src="{{ asset('logo/gf-food.jpg') }}" alt="Company Logo">
+                <img src="{{ asset('logo/gf-food2.png') }}" alt="Company Logo">
             </div>
             @php
                 $domin = url('/');  
             @endphp
             <div class="company-info">
-                <h1>GF Food and beverage LTD</h1>
+                <h1>বদরুল এন্টারপ্রাইজ </h1>
                 <p>
-                    @if ($domin == 'https://app.gffoodandbeverage.com')
-                        ভানুগাছ বাজার, কমলগঞ্জ, মৌলভীবাজার
-                    @else
-                      এমপির বাড়ির গেইট, 2য় তলা, চাঁদনীঘাট, মৌলভীবাজার।
-                    @endif
+                    ইউপি রোড রাজনগর
                 </p>
                 <p>
-                    @if ($domin == 'https://app.gffoodandbeverage.com')
-                        Phone: 01344-558778
-                    @else
-                        Phone: 01756697683
-                    @endif
+                     +880 1709090957
                 </p>
             </div>
         </header>

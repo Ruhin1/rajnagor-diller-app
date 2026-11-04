@@ -371,7 +371,7 @@ class CardController extends Controller
         return $randomString;
     }
 
-    private function generateUniqueCodes($count, $length = 10)
+    private function generateUniqueCodes($count, $length = 9)
     {
         $codes = [];
 
