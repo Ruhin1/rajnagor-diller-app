@@ -88,7 +88,7 @@
         }
     </style> --}}
 
-    <style>
+<style>
     @page {
         size: A4;
         margin: 0;
@@ -101,6 +101,8 @@
         }
         .card {
             box-shadow: none;
+            /* প্রিন্টে গ্রেডিয়েন্টের বদলে সলিড নিশ্চিত করা */
+            background: #dbeafe !important;
         }
     }
 
@@ -125,9 +127,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* 🎨 নতুন থিম */
-        background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
-        border: 2px solid #3730a3;
+        /* 🎨 প্রিন্ট-ফ্রেন্ডলি সলিড ব্যাকগ্রাউন্ড (গ্রেডিয়েন্ট বাদ) */
+        background-color: #dbeafe;
+        border: 2px solid #1e40af;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
         page-break-inside: avoid;
@@ -140,19 +142,18 @@
         font-weight: bold;
     }
 
-    /* 🎨 টেক্সট কালার ইন্ডিগো */
+    /* 🎨 গাঢ় নীল টেক্সট — কাগজে স্পষ্ট */
     .card .cname,
     .card .pname {
-        color: #312e81;
+        color: #1e3a8a;
     }
 
-    /* 🎨 বারকোড হাইলাইট (সাদা বক্স, বারকোড স্পষ্ট দেখাবে) */
+    /* 🎨 বারকোড হাইলাইট — পিওর সাদা বক্স */
     .card .barcode {
         margin: 4px 0;
         background: #ffffff;
         padding: 2px 4px;
-        border-radius: 3px;
-        border: 1px solid #c7d2fe;
+        border: 1px solid #93c5fd;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -163,7 +164,7 @@
         letter-spacing: 1px;
         font-size: 18px;
         text-align: center;
-        color: #312e81 !important;
+        color: #000000 !important;   /* বারকোডের নিচের কোড কালো */
         font-weight: bold;
         white-space: nowrap;
         margin-top: 2px;
