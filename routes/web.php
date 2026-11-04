@@ -123,10 +123,10 @@ Route::middleware("auth","role.zero.only")->group(function () {
         Route::post("/customers/update/{id}", "update")->name("customers.update");
         Route::delete("/customersdelate/{id}", "destroy")->name("customers.destroy");
         // ===========================
-        Route::get("/dcustomers", "dindex")->name('dr.customerindex');
-        Route::post("/dcustomers/store", "dstore")->name("dcustomers.store");
-        Route::post("/dcustomers/update/{id}", "dupdate")->name("dcustomers.update");
-        Route::delete("/dcustomersdelate/{id}", "ddestroy")->name("dcustomers.destroy");
+        // Route::get("/dcustomers", "dindex")->name('dr.customerindex');
+        // Route::post("/dcustomers/store", "dstore")->name("dcustomers.store");
+        // Route::post("/dcustomers/update/{id}", "dupdate")->name("dcustomers.update");
+        // Route::delete("/dcustomersdelate/{id}", "ddestroy")->name("dcustomers.destroy");
 
     });
 
@@ -227,7 +227,7 @@ Route::middleware("auth","role.zero.only")->group(function () {
     // ***********--------------***********
 
     Route::get('/allcustomerdues', [SaleController::class,'allcustomerdues'])->name('allcustomerdues'); 
-    Route::get('/alldcustomerdues', [SaleController::class,'alldcustomerdues'])->name('alldcustomerdues'); 
+    // Route::get('/alldcustomerdues', [SaleController::class,'alldcustomerdues'])->name('alldcustomerdues'); 
 
 
     Route::get('/alldealerdues', [SaleController::class,'alldealerdues'])->name('alldealerdues');
@@ -307,7 +307,7 @@ Route::middleware("auth","role.zero.only")->group(function () {
     Route::get('/sales/{sale}/pos-print', [SaleController::class, 'printPos'])->name('sales.pos.print');
     
 
-    Route::get("/dipo-sales", [PosController::class, "diposale"])->name("dipo.sale");
+    // Route::get("/dipo-sales", [PosController::class, "diposale"])->name("dipo.sale");
     Route::get('/pos/customer', function () {
      
         return Customer::where('is_dipu','=',1)->get(['id','name','number','shop_name','shop_address']);
