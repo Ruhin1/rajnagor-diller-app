@@ -101,8 +101,7 @@
         }
         .card {
             box-shadow: none;
-            /* প্রিন্টে গ্রেডিয়েন্টের বদলে সলিড নিশ্চিত করা */
-            background: #dbeafe !important;
+            background-color: #fef3c7 !important;
         }
     }
 
@@ -127,8 +126,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* 🎨 প্রিন্ট-ফ্রেন্ডলি সলিড ব্যাকগ্রাউন্ড (গ্রেডিয়েন্ট বাদ) */
-        background-color: #dbeafe;
+        /* 🎨 ব্যাকগ্রাউন্ড: উষ্ণ ক্রিম */
+        background-color: #fef3c7;
+        /* 🎨 বর্ডার: গাঢ় নীল (ব্যাকগ্রাউন্ডের থেকে সম্পূর্ণ আলাদা) */
         border: 2px solid #1e40af;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
@@ -142,34 +142,35 @@
         font-weight: bold;
     }
 
-    /* 🎨 গাঢ় নীল টেক্সট — কাগজে স্পষ্ট */
+    /* 🎨 টেক্সট: গাঢ় বাদামি (বর্ডারের নীল থেকেও আলাদা) */
     .card .cname,
     .card .pname {
-        color: #1e3a8a;
+        color: #7c2d12;
     }
 
-    /* 🎨 বারকোড হাইলাইট — পিওর সাদা বক্স */
+    /* 🎨 বারকোড হাইলাইট: পিওর সাদা বক্স */
     .card .barcode {
         margin: 4px 0;
         background: #ffffff;
         padding: 2px 4px;
-        border: 1px solid #93c5fd;
+        border: 1px solid #1e40af;
         display: inline-flex;
         align-items: center;
         justify-content: center;
     }
 
+    /* 🎨 বারকোডের নিচের কোড: কালো (স্ক্যানার ফ্রেন্ডলি) */
     .card .barcode-text {
         font-family: 'Courier New', Courier, monospace;
         letter-spacing: 1px;
         font-size: 18px;
         text-align: center;
-        color: #000000 !important;   /* বারকোডের নিচের কোড কালো */
+        color: #000000 !important;
         font-weight: bold;
         white-space: nowrap;
         margin-top: 2px;
     }
-</style> 
+</style>
 </head>
 <body>
     <div class="cards-container">
