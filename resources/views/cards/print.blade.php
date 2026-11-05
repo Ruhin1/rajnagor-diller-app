@@ -77,8 +77,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f1f5f9;      /* 🎨 কুল স্লেট গ্রে — মসলার সাথে মেলে না */
-    border: 1px solid #0f172a;      /* 🎨 ডিপ নেভি বর্ডার */
+background-color: #e0f2fe;      /* 🎨 হালকা আকাশি নীল */
+    border: 1px solid #075985;      /* 🎨 ডিপ ওশান ব্লু */
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     page-break-inside: avoid;
@@ -87,7 +87,7 @@
 
 .card .cname,
 .card .pname {
-    color: #0f172a;                 /* 🎨 ডিপ নেভি টেক্সট */
+     color: #075985;              /* 🎨 ডিপ নেভি টেক্সট */
 }
 
         .card .barcode {
