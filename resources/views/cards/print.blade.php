@@ -88,7 +88,7 @@
         }
     </style> --}}
 
-{{-- <style>
+<style>
     @page {
         size: A4;
         margin: 0;
@@ -170,7 +170,7 @@
         white-space: nowrap;
         margin-top: 2px;
     }
-</style> --}}
+</style>
 </head>
 <body>
     <div class="cards-container">
