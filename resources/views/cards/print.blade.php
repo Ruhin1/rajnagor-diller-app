@@ -85,10 +85,12 @@
     background-color: #c4b5fd;
     border: 1px solid #4c1d95;
 }
+
 .card .cname,
 .card .pname {
-    color: #2e1065;
+    color: #134e4a;
 }
+
 .card .barcode {
     margin: 6px 0;
     background-color: #ffffff;
