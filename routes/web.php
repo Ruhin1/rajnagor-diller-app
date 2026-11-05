@@ -192,7 +192,7 @@ Route::middleware("auth","role.zero.only")->group(function () {
     Route::get('/sales-reportall', [SaleController::class, 'salesReportall'])->name('sales.reportall');
     
     // card
-    // Route::get('/cards/create', [CardController::class, 'create'])->name('cards.create');
+    Route::get('/cards/create', [CardController::class, 'create'])->name('cards.create');
     Route::post('/cards/store', [CardController::class, 'createCard'])->name('cards.store');
     Route::post('/cards/print', [CardController::class, 'cardprint'])->name('cards.print'); 
     Route::get('/cards/check', [CardController::class, 'index'])->name('cards.index');

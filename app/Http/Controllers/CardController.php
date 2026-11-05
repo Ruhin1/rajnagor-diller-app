@@ -20,8 +20,16 @@ class CardController extends Controller
     // Card create from
     public function create()
     {
-        $cards = CardTocen::latest()->paginate(10);
-        return view("cards.create", compact("cards"));
+        $access = auth()->user()->access;
+        if($access == 1){
+    
+            $cards = CardTocen::latest()->paginate(10);
+            return view("cards.create", compact("cards"));
+        }
+
+        abort(403, "আপনার এই পেজ দেখার অনুমতি নেই।");
+
+        
     }
     // Card create database
     public function createCard(Request $request)
@@ -49,7 +57,7 @@ class CardController extends Controller
             'বাটার অয়েল'      => 300,
             'বাটার পোলাও'     => 300,
             'মালাই ক্রিম'     => 300,
-            'মিট ক্রিম'       => 300,
+            'মিট ক্রিম'       => 500,
             'মাছের রোস্ট ফ্রাই' => 300,
             'দুঁ পেয়াজা মশলা' => 300,
             'পেস্তাবাদাম গুড়া (5)' => 500,
@@ -58,7 +66,7 @@ class CardController extends Controller
             'রোস্ট সস্'        => 80,
             'বিরানী সস'        => 80,
             'মিট সস'           => 100,
-            'ভেজিটেবল সস'    => 150,
+            'ভেজিটেবল সস'    => 100,
         ];
 
         // product_name থেকে প্রাইস বের করা
