@@ -82,13 +82,13 @@
     page-break-inside: avoid;
     padding: 2px;
 
-    background-color: #ecfdf5;      /* 🎨 খুব হালকা মিন্ট */
-    border: 1px solid #065f46;      /* 🎨 ডিপ এমারেল্ড */
+    background-color: #c7d2fe;      /* 🎨 পেরিউইঙ্কল — সাদা থেকে স্পষ্ট আলাদা */
+    border: 1px solid #3730a3;      /* 🎨 ডিপ ইন্ডিগো বর্ডার */
 }
 
 .card .cname,
 .card .pname {
-    color: #065f46;
+    color: #1e1b4b; 
 }
 
         .card .barcode {
