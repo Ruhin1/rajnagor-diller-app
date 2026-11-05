@@ -77,17 +77,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-background-color: #e0f2fe;      /* 🎨 হালকা আকাশি নীল */
-    border: 1px solid #075985;      /* 🎨 ডিপ ওশান ব্লু */
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     page-break-inside: avoid;
     padding: 2px;
+
+    background-color: #ecfdf5;      /* 🎨 খুব হালকা মিন্ট */
+    border: 1px solid #065f46;      /* 🎨 ডিপ এমারেল্ড */
 }
 
 .card .cname,
 .card .pname {
-     color: #075985;              /* 🎨 ডিপ নেভি টেক্সট */
+    color: #065f46;
 }
 
         .card .barcode {
