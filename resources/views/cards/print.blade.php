@@ -37,22 +37,7 @@
             gap: 5px;
             padding: 8px;
         }
-        .card {
-            width: 145px;  /* আগের চেয়ে একটু বড় */
-            height: 80px;  /* আগের চেয়ে একটু বড় */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: #fef3c7;
-            border: 1px solid #1e40af;
-            /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); */
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-            page-break-inside: avoid;
-            padding: 2px;
-        }
+
         
         
         
@@ -62,16 +47,9 @@
             font-weight: bold;
         }
         
-        .card .cname,
-        .card .pname {
-            color: #7c2d12;
-        }
+
         
-        .card .barcode {
-            margin: 6px 0;
-             background-color: #ffffff;
-            
-        }
+
         
         /* বারকোড SVG এর জন্য স্টাইল */
         
@@ -85,6 +63,36 @@
             font-weight: bold;
             white-space: nowrap;
             margin-top: 2px;
+        }
+
+
+
+        /* //=============================== */
+
+.card {
+    width: 145px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f5f9;      /* 🎨 কুল স্লেট গ্রে — মসলার সাথে মেলে না */
+    border: 1px solid #0f172a;      /* 🎨 ডিপ নেভি বর্ডার */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    page-break-inside: avoid;
+    padding: 2px;
+}
+
+.card .cname,
+.card .pname {
+    color: #0f172a;                 /* 🎨 ডিপ নেভি টেক্সট */
+}
+
+        .card .barcode {
+            margin: 6px 0;
+            background-color: #ffffff; 
         }
     </style>
 
