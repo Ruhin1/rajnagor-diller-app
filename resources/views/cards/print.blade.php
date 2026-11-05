@@ -82,14 +82,15 @@
     page-break-inside: avoid;
     padding: 2px;
 
-    background-color: #c7d2fe;      /* 🎨 পেরিউইঙ্কল — সাদা থেকে স্পষ্ট আলাদা */
-    border: 1px solid #3730a3;      /* 🎨 ডিপ ইন্ডিগো বর্ডার */
+    background-color: #c7d2fe;
+    border: 1px solid #3730a3;
 }
 
 .card .cname,
 .card .pname {
-    color: #1e1b4b; 
+    color: #1e1b4b;
 }
+
 
         .card .barcode {
             margin: 6px 0;
