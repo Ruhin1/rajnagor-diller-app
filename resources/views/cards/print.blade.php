@@ -82,20 +82,17 @@
     page-break-inside: avoid;
     padding: 2px;
 
-    background-color: #c7d2fe;
-    border: 1px solid #3730a3;
+    background-color: #a7f3d0;
+    border: 1px solid #065f46;
 }
-
 .card .cname,
 .card .pname {
-    color: #1e1b4b;
+    color: #064e3b;
 }
-
-
-        .card .barcode {
-            margin: 6px 0;
-            background-color: #ffffff; 
-        }
+.card .barcode {
+    margin: 6px 0;
+    background-color: #ffffff;
+}
     </style>
 
 
