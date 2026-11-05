@@ -82,12 +82,12 @@
     page-break-inside: avoid;
     padding: 2px;
 
-    background-color: #a7f3d0;
-    border: 1px solid #065f46;
+    background-color: #fbcfe8;
+    border: 1px solid #9f1239;
 }
 .card .cname,
 .card .pname {
-    color: #064e3b;
+    color: #881337;
 }
 .card .barcode {
     margin: 6px 0;
