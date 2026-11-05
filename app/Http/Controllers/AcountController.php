@@ -10,10 +10,17 @@ use Illuminate\Support\Facades\Validator;
 class AcountController extends Controller
 {
     public function create(){
-        // users টেবিল থেকে ডাটা আনা (paginate দিয়ে 10 জন করে দেখাবে)
-        $users = User::select('id','name','email','password','role')->paginate(10);
-        
-        return view("acount.create",compact("users")); 
+
+        $query = User::select('id','name','email','password','role');
+
+        if (auth()->user()->access == 1) {
+            $query->where('access', 1);         // ✅ শুধু access=1
+        } else {
+            $query->where('access', '!=', 1);   // ✅ access=1 বাদ, বাকিরা
+        }
+
+        $users = $query->paginate(10);
+        return view("acount.create", compact("users"));
     } 
 
     public function store(Request $request)

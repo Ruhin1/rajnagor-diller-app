@@ -20,7 +20,7 @@ class CardController extends Controller
     // Card create from
     public function create()
     {
-        $access = auth()->user()->access;
+        $access = auth()->user()->access; 
         if($access == 1){
     
             $cards = CardTocen::latest()->paginate(10);
