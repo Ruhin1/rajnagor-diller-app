@@ -41,7 +41,7 @@ Route::middleware("auth","role.zero.only")->group(function () {
         }else if(auth()->user()->role == 3){
             return redirect("/cards/check");    
         }else{
-            return redirect("/my-dashboard");
+            return redirect("/pos");
         } 
     })->name("homes"); 
 
