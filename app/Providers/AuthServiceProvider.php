@@ -94,16 +94,16 @@ class AuthServiceProvider extends ServiceProvider
                                 "url" => "/pos",
                                 "icon" => "fas fa-fw fa-cash-register", // POS এর জন্য আইকন
                             ],
-                            [
-                                "text" => "নতুন ডিলার বিক্রয়(DP)", // আরও স্পষ্ট নাম
-                                "url" => "/dealer-sales",
-                                "icon" => "fas fa-fw fa-truck-loading", // ডিলারের জন্য আইকন
-                            ],
-                            [
-                                "text" => "ডিপো বিক্রয়",
-                                "url" => "/dipo-sales",
-                                "icon" => "fas fa-fw fa-warehouse",
-                            ],
+                            // [
+                            //     "text" => "নতুন ডিলার বিক্রয়(DP)", // আরও স্পষ্ট নাম
+                            //     "url" => "/dealer-sales",
+                            //     "icon" => "fas fa-fw fa-truck-loading", // ডিলারের জন্য আইকন
+                            // ],
+                            // [
+                            //     "text" => "ডিপো বিক্রয়",
+                            //     "url" => "/dipo-sales",
+                            //     "icon" => "fas fa-fw fa-warehouse",
+                            // ],
                             [
                                 "text" => "নতুন অর্ডার তালিকা", // 'সব অর্ডার দেখুন' এর পরিবর্তে
                                 "url" => "/sales/new-orders",
@@ -130,17 +130,17 @@ class AuthServiceProvider extends ServiceProvider
                                 "url" => "/allcustomerdues",
                                 "icon" => "fas fa-file-invoice-dollar", // 💰 Invoice/Dues icon
                             ],
-                            [
-                                "text" => "ডিলারের বকেয়া তালিকা",
-                                "url" => "/alldealerdues",
-                                "icon" => "fas fa-file-invoice-dollar", // 💰 Invoice/Dues icon
-                            ],
+                            // [
+                            //     "text" => "ডিলারের বকেয়া তালিকা",
+                            //     "url" => "/alldealerdues",
+                            //     "icon" => "fas fa-file-invoice-dollar", // 💰 Invoice/Dues icon
+                            // ],
 
-                            [
-                                "text" => "ডিপু কাস্টমার বকেয়া তালিকা",
-                                "url" => "/alldcustomerdues",
-                                "icon" => "fas fa-file-invoice-dollar", // 💰 Invoice/Dues icon
-                            ],
+                            // [
+                            //     "text" => "ডিপু কাস্টমার বকেয়া তালিকা",
+                            //     "url" => "/alldcustomerdues",
+                            //     "icon" => "fas fa-file-invoice-dollar", // 💰 Invoice/Dues icon
+                            // ],
                             
                         ],
                     ],
@@ -150,16 +150,16 @@ class AuthServiceProvider extends ServiceProvider
                         "url" => "/customers",
                         "icon" => "fas fa-fw fa-users", // কাস্টমারের জন্য আইকন
                     ],
-                    [
-                        "text" => "ডিলার তালিকা", // 'ডিলার ম্যানেজমেন্ট' এর পরিবর্তে
-                        "url" => "/dealers",
-                        "icon" => "fas fa-fw fa-handshake", // ডিলারের জন্য আইকন
-                    ],
-                    [
-                        "text" => "ডিপু কাস্টমার তালিকা", // 'কাষ্টমার ম্যানেজমেন্ট' এর পরিবর্তে
-                        "url" => "/dcustomers",
-                        "icon" => "fas fa-fw fa-users", // কাস্টমারের জন্য আইকন
-                    ],
+                    // [
+                    //     "text" => "ডিলার তালিকা", // 'ডিলার ম্যানেজমেন্ট' এর পরিবর্তে
+                    //     "url" => "/dealers",
+                    //     "icon" => "fas fa-fw fa-handshake", // ডিলারের জন্য আইকন
+                    // ],
+                    // [
+                    //     "text" => "ডিপু কাস্টমার তালিকা", // 'কাষ্টমার ম্যানেজমেন্ট' এর পরিবর্তে
+                    //     "url" => "/dcustomers",
+                    //     "icon" => "fas fa-fw fa-users", // কাস্টমারের জন্য আইকন
+                    // ],
 
                     [
                         "text" => "খরচ ব্যবস্থাপনা", // 'খরচ ম্যানেজমেন্ট' এর পরিবর্তে
@@ -170,11 +170,11 @@ class AuthServiceProvider extends ServiceProvider
                         "text" => "কার্ড ব্যবস্থাপনা", // 'কার্ড ম্যানেজমেন্ট' এর পরিবর্তে
                         "icon" => "fas fa-fw fa-credit-card", // কার্ডের জন্য আইকন
                         "submenu" => [
-                            [
-                                "text" => "নতুন কার্ড তৈরি",
-                                "url" => "/cards/create",
-                                "icon" => "fas fa-fw fa-plus-circle",
-                            ],
+                            // [
+                            //     "text" => "নতুন কার্ড তৈরি",
+                            //     "url" => "/cards/create",
+                            //     "icon" => "fas fa-fw fa-plus-circle",
+                            // ],
                             [
                                 "text" => "কার্ড যাচাইকরণ", // 'কার্ড চেক করোন' এর পরিবর্তে
                                 "url" => "/cards/check",
@@ -193,58 +193,58 @@ class AuthServiceProvider extends ServiceProvider
                         "url" => "/chef/create",
                         "icon" => "fas fa-fw fa-utensils", // শেফের জন্য উপযুক্ত আইকন
                     ],
-                    [
-                        "text" => "খোলা পণ্য ম্যানেজমেন্ট",
-                        "icon" => "fas fa-box-open text-success", // মূল মেনুর জন্য আইকন
-                        "submenu" => [
-                            [
-                                "text" => "পণ্য ও স্টক", // 'পণ্য যোগ করুন' এর পরিবর্তে এটি আরও সঠিক
-                                "url" => "/morich/products",
-                                "icon" => "fas fa-boxes text-info", // পণ্য তালিকার জন্য আইকন
-                            ],
-                            [
-                                "text" => "বিক্রয় এন্ট্রি করুন", // 'করোন' এর পরিবর্তে 'করুন'
-                                "url" => "/morich/daily-sale/create",
-                                "icon" => "fas fa-cart-plus text-info", // বিক্রয় যোগ করার আইকন
-                            ],
-                            [
-                                "text" => "বিক্রয় রিপোর্ট দেখুন",
-                                "url" => "/morich/daily-sale/reports",
-                                "icon" => "fas fa-chart-line text-info", // রিপোর্টের জন্য আইকন
-                            ],
-                            [
-                                "text" => "স্টক রিপোর্ট",
-                                "url" => "/morich/products/stock-report", // অথবা route('morich.products.stock-report')
-                                "icon" => "fas fa-warehouse text-info",
-                            ],
-                            [
-                                "text" => "পণ্যভিত্তিক বিক্রয়",
-                                "url" => "/morich/sreport",
-                                "icon" => "fas fa-chart-pie text-info",
-                            ],
-                            [
-                                "text" => "স্টক এন্ট্রির ইতিহাস",
-                                "url"  => "/morich/stock-entries",
-                                "icon" => "fas fa-history text-info",
-                            ],
-                            [
-                                "text" => "স্টক মুভমেন্ট",
-                                "url"  => "/morich/stock-movement",
-                                "icon" => "fas fa-exchange-alt text-info",
-                            ],
-                            [
-                                "text" => "তারিখভিত্তিক লেজার",
-                                "url"  => "/morich/date-wise-ledger",
-                                "icon" => "fas fa-book text-info",
-                            ],
-                            [
-                                "text" => "কাস্টমার বকেয়া তালিকা",
-                                "url" => "/custom/customers",
-                                "icon" => "fas fa-book-open text-primary",
-                            ],
+                    // [
+                    //     "text" => "খোলা পণ্য ম্যানেজমেন্ট",
+                    //     "icon" => "fas fa-box-open text-success", // মূল মেনুর জন্য আইকন
+                    //     "submenu" => [
+                    //         [
+                    //             "text" => "পণ্য ও স্টক", // 'পণ্য যোগ করুন' এর পরিবর্তে এটি আরও সঠিক
+                    //             "url" => "/morich/products",
+                    //             "icon" => "fas fa-boxes text-info", // পণ্য তালিকার জন্য আইকন
+                    //         ],
+                    //         [
+                    //             "text" => "বিক্রয় এন্ট্রি করুন", // 'করোন' এর পরিবর্তে 'করুন'
+                    //             "url" => "/morich/daily-sale/create",
+                    //             "icon" => "fas fa-cart-plus text-info", // বিক্রয় যোগ করার আইকন
+                    //         ],
+                    //         [
+                    //             "text" => "বিক্রয় রিপোর্ট দেখুন",
+                    //             "url" => "/morich/daily-sale/reports",
+                    //             "icon" => "fas fa-chart-line text-info", // রিপোর্টের জন্য আইকন
+                    //         ],
+                    //         [
+                    //             "text" => "স্টক রিপোর্ট",
+                    //             "url" => "/morich/products/stock-report", // অথবা route('morich.products.stock-report')
+                    //             "icon" => "fas fa-warehouse text-info",
+                    //         ],
+                    //         [
+                    //             "text" => "পণ্যভিত্তিক বিক্রয়",
+                    //             "url" => "/morich/sreport",
+                    //             "icon" => "fas fa-chart-pie text-info",
+                    //         ],
+                    //         [
+                    //             "text" => "স্টক এন্ট্রির ইতিহাস",
+                    //             "url"  => "/morich/stock-entries",
+                    //             "icon" => "fas fa-history text-info",
+                    //         ],
+                    //         [
+                    //             "text" => "স্টক মুভমেন্ট",
+                    //             "url"  => "/morich/stock-movement",
+                    //             "icon" => "fas fa-exchange-alt text-info",
+                    //         ],
+                    //         [
+                    //             "text" => "তারিখভিত্তিক লেজার",
+                    //             "url"  => "/morich/date-wise-ledger",
+                    //             "icon" => "fas fa-book text-info",
+                    //         ],
+                    //         [
+                    //             "text" => "কাস্টমার বকেয়া তালিকা",
+                    //             "url" => "/custom/customers",
+                    //             "icon" => "fas fa-book-open text-primary",
+                    //         ],
 
-                        ],
-                    ],
+                    //     ],
+                    // ],
 
                     [
                         "header" => "সিস্টেম ও ব্যবহারকারী", // একটি হেডার দিয়ে সেকশন আলাদা করা হলো

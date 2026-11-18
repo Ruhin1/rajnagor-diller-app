@@ -178,14 +178,14 @@ Route::middleware("auth","role.zero.only")->group(function () {
 
     // Diler All Route
     // routes/web.php
-    Route::get('/dealers', [DealerController::class, 'index'])->name('dealers.index');
+    // Route::get('/dealers', [DealerController::class, 'index'])->name('dealers.index');
     Route::get('/dealers/list', [DealerController::class, 'list'])->name('dealers.list');
     Route::post('/dealers/store', [DealerController::class, 'store'])->name('dealers.store');
     Route::post('/dealers/{dealer}/update', [DealerController::class, 'update'])->name('dealers.update');
     Route::delete('/dealers/{dealer}', [DealerController::class, 'destroy'])->name('dealers.destroy');
 
     // Deller Sells
-    Route::get('/dealer-sales', [SaleController::class, 'dealerSalePage'])->name('dealer.sales.page');
+    // Route::get('/dealer-sales', [SaleController::class, 'dealerSalePage'])->name('dealer.sales.page');
     Route::post('/dealer-sales/store', [SaleController::class, 'storeDealerSale'])->name('dealer.sales.store');
 
 
@@ -230,7 +230,7 @@ Route::middleware("auth","role.zero.only")->group(function () {
     // Route::get('/alldcustomerdues', [SaleController::class,'alldcustomerdues'])->name('alldcustomerdues'); 
 
 
-    Route::get('/alldealerdues', [SaleController::class,'alldealerdues'])->name('alldealerdues');
+    // Route::get('/alldealerdues', [SaleController::class,'alldealerdues'])->name('alldealerdues');
     
     // কাস্টমারে কাছে বকেয়া।
     Route::get('/customers/{customer}/dues', [SaleController::class, 'customerDues'])->name('customers.dues'); 
